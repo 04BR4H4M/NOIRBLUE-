@@ -11,7 +11,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">    
+    <style>
+        /* Forzamos el estilo aquí para que Vercel no lo ignore */
+        .text-outline {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+            color: transparent !important; /* El !important es la clave */
+        }
+        
+        /* Ajuste para móviles (borde más fino) */
+        @media (max-width: 768px) {
+            .text-outline {
+                -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.8);
+            }
+        }
+    </style>
+</head>
 </head>
 <body class="bg-noir text-gray-200 font-main antialiased selection:bg-denimLight selection:text-white">
 
@@ -47,10 +62,10 @@
                 Artesanalmente Sostenible
             </h2>
             
-            <h1 class="text-6xl md:text-8xl font-bold mb-4 tracking-tighter leading-none">
-                <span class="block text-white">DENIM</span>
-                <span class="block text-outline md:text-9xl opacity-90">REINVENTED</span>
-            </h1>
+           <h1 class="text-6xl md:text-8xl font-bold mb-4 tracking-tighter leading-none">
+    <span class="block text-white">DENIM</span>
+    <span class="block text-outline md:text-9xl opacity-90">REINVENTED</span>
+</h1>
             
             <p class="text-base md:text-lg mb-12 max-w-xl mx-auto text-gray-400 font-light leading-relaxed mt-6">
                 Productos de confección sostenible. Aprovechamos la versatilidad de las costuras reforzadas para diseños frescos y Underground.
