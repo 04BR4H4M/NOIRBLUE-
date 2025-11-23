@@ -34,3 +34,34 @@ body {
         -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.8);
     }
 }
+/* --- Estilo para el Botón Flotante de WhatsApp --- */
+
+.whatsapp-flotante {
+    position: fixed; /* Lo deja fijo en la pantalla */
+    width: 60px;
+    height: 60px;
+    bottom: 40px; /* Distancia desde abajo */
+    right: 40px; /* Distancia desde la derecha */
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    color: #FFF; /* Color del ícono */
+    border-radius: 50%; /* Lo hace un círculo perfecto */
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+    z-index: 100; /* Se asegura de que esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+    color: #FFF;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
