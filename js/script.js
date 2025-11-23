@@ -2,21 +2,20 @@ tailwind.config = {
     theme: {
         extend: {
             colors: {
-                // Paleta basada en la identidad NOIRBLUE
-                noir: '#0a0a0a',       // Negro profundo para fondos
-                denim: '#1e293b',      // Azul grisáceo oscuro (Base)
-                denimDark: '#0f172a',  // Azul noche
-                denimLight: '#5b7fa6', // Azul claro para detalles
-                accent: '#cbd5e1',     // Gris plata para textos secundarios
+                noir: '#0a0a0a',
+                denim: '#1e293b',
+                denimDark: '#0f172a',
+                denimLight: '#5b7fa6',
+                accent: '#cbd5e1',
             },
             fontFamily: {
-                // Geneva para textos principales, Sans como respaldo
+                // Geneva no está en Google Fonts, así que dejamos las de sistema como respaldo seguro
                 main: ['Geneva', 'Tahoma', 'Verdana', 'sans-serif'], 
-                // Mistral para la sección LAB
-                lab: ['Mistral', 'cursive'], 
+                
+                // AQUÍ ESTÁ EL CAMBIO: Usamos 'Permanent Marker' en lugar de 'Mistral'
+                lab: ['"Permanent Marker"', 'cursive'], 
             },
             backgroundImage: {
-                // Degradado radial para dar profundidad al Hero
                 'hero-gradient': 'radial-gradient(circle at center, #1e293b 0%, #020617 100%)',
             }
         }
