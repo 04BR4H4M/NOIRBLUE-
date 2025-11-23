@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB | Experimental Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 text-noir font-main antialiased selection:bg-denim selection:text-white">
+
+    <nav class="fixed w-full z-50 p-6 flex justify-between items-center mix-blend-difference text-white">
+        <a href="index.html" class="text-2xl font-bold tracking-widest">NOIRBLUE</a>
+        <span class="font-lab text-3xl">Lab* Edition</span>
+    </nav>
+
+    <header class="h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+        <h1 class="font-lab text-[12rem] md:text-[20rem] leading-none opacity-5 absolute select-none pointer-events-none text-noir">
+            Lab
+        </h1>
+
+        <div class="relative z-10 max-w-3xl">
+            <h2 class="font-lab text-6xl md:text-8xl mb-6 text-noir rotate-[-2deg]">
+                Nuevos Talentos
+            </h2>
+            <p class="text-xl md:text-2xl font-bold uppercase tracking-tighter mb-8 border-l-4 border-noir pl-6 text-left">
+                Prendas con colores y estilos fuera de lo convencional.
+            </p>
+            <div class="animate-bounce mt-12">
+                <svg class="w-6 h-6 mx-auto text-noir" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+            
+            <article class="flex flex-col space-y-4 mt-12">
+                <div class="relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-noir transform translate-x-2 translate-y-2 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+                    <img src="" class="relative w-full h-[500px] object-cover grayscale contrast-125 border-2 border-noir z-10 bg-white">
+                    <div class="absolute top-4 left-4 z-20 bg-denim text-white font-lab text-xl px-3 py-1 rotate-[-5deg]">Unico</div>
+                </div>
+                <h3 class="text-3xl font-bold uppercase mt-4">Chaos Denim Jkt</h3>
+                <p class="text-gray-600">Diseñado por: <span class="font-bold underline">Natalia C.</span></p>
+            </article>
+
+            <article class="flex flex-col space-y-4 md:mt-32">
+                <div class="relative group cursor-pointer">
+                    <div class="absolute inset-0 bg-denim transform -translate-x-2 translate-y-2 transition-transform group-hover:-translate-x-4 group-hover:translate-y-4"></div>
+                    <img src="" class="relative w-full h-[500px] object-cover grayscale contrast-125 border-2 border-noir z-10 bg-white">
+                </div>
+                <h3 class="text-3xl font-bold uppercase mt-4">Patchwork Vest</h3>
+                <p class="text-gray-600">Diseñado por: <span class="font-bold underline">Natalia C.</span></p>
+            </article>
+
+        </div>
+    </section>
+    
+    <footer class="bg-white border-t border-noir py-12 text-center text-noir">
+        <a href="index.html" class="font-bold border-b border-noir pb-1 hover:text-denim transition-colors">Volver al Inicio</a>
+    </footer>
+
+</body>
+</html>

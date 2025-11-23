@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo | NOIRBLUE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-noir text-gray-200 font-main antialiased selection:bg-denimLight selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-noir/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-8 h-10 border-2 border-gray-400 rounded-b-lg flex items-center justify-center relative">
+                        <span class="text-white font-bold text-lg">N</span>
+                    </div>
+                    <span class="text-xl font-bold tracking-widest text-white">NOIRBLUE</span>
+                </a>
+
+                <div class="flex space-x-8 text-xs font-bold uppercase tracking-widest">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Inicio</a>
+                    <a href="lab.html" class="text-gray-400 hover:text-white transition-colors">LAB</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-12 text-center px-4 bg-hero-gradient bg-noise">
+        <span class="text-denimLight font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Shop Online</span>
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter">NUESTROS PRODUCTOS</h1>
+        
+        <div class="flex flex-wrap justify-center gap-4 mt-8" id="filter-container">
+            <button class="filter-btn px-6 py-2 bg-white text-noir border border-white font-bold text-xs uppercase tracking-widest rounded-full transition-all" data-filter="todos">
+                Todos
+            </button>
+            
+            <button class="filter-btn px-6 py-2 border border-gray-700 text-gray-400 font-bold text-xs uppercase tracking-widest rounded-full hover:border-white hover:text-white transition-all" data-filter="bolsos">
+                Bolsos
+            </button>
+            
+            <button class="filter-btn px-6 py-2 border border-gray-700 text-gray-400 font-bold text-xs uppercase tracking-widest rounded-full hover:border-white hover:text-white transition-all" data-filter="accesorios">
+                Accesorios
+            </button>
+            
+            <button class="filter-btn px-6 py-2 border border-gray-700 text-gray-400 font-bold text-xs uppercase tracking-widest rounded-full hover:border-white hover:text-white transition-all" data-filter="lab">
+                Edición LAB
+            </button>
+        </div>
+    </header>
+
+    <section class="py-16 px-4 bg-noir relative z-10">
+        <section class="py-16 px-4 bg-noir relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+
+                    <article class="product-item group" data-category="bolsos">
+                        <div class="relative overflow-hidden mb-6 border border-gray-800">
+                            <a href="producto.html">
+                                <img src="img/TOTE BAG.jpg" alt="Tote Bag" class="w-full h-96 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                            </a>
+                            <div class="absolute top-2 right-2 bg-denim text-white text-[10px] uppercase font-bold px-2 py-1">Best Seller</div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-bold text-white mb-1">TOTE BAG CLASSIC</h3>
+                            <p class="text-gray-500 text-xs mb-3">Colección Principal</p>
+                            <span class="block text-gray-300 font-bold mb-4">$120.000 COP</span>
+                            <a href="producto.html" class="inline-block border-b border-gray-600 text-white text-xs font-bold uppercase tracking-widest pb-1 hover:border-white hover:text-denimLight transition-all">Ver Detalles</a>
+                        </div>
+                    </article>
+
+                    <article class="product-item group" data-category="accesorios">
+                        <div class="relative overflow-hidden mb-6 border border-gray-800">
+                            <a href="cosmetiquera.html">
+                                <img src="img/COSMETIQUERA.jpg" alt="Cosmetiquera" class="w-full h-96 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-bold text-white mb-1">COSMETIQUERA</h3>
+                            <p class="text-gray-500 text-xs mb-3">Accesorios</p>
+                            <span class="block text-gray-300 font-bold mb-4">$45.000 COP</span>
+                            <a href="cosmetiquera.html" class="inline-block border-b border-gray-600 text-white text-xs font-bold uppercase tracking-widest pb-1 hover:border-white hover:text-denimLight transition-all">Ver Detalles</a>
+                        </div>
+                    </article>
+
+                    <article class="product-item group" data-category="accesorios">
+                        <div class="relative overflow-hidden mb-6 border border-gray-800">
+                            <a href="funda-laptop.html">
+                                <img src="img/FUNDA PARA LAPTOP.jpg" alt="Funda Laptop" class="w-full h-96 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-bold text-white mb-1">FUNDA LAPTOP</h3>
+                            <p class="text-gray-500 text-xs mb-3">Tech & Style</p>
+                            <span class="block text-gray-300 font-bold mb-4">$60.000 COP</span>
+                            <a href="funda-laptop.html" class="inline-block border-b border-gray-600 text-white text-xs font-bold uppercase tracking-widest pb-1 hover:border-white hover:text-denimLight transition-all">Ver Detalles</a>
+                        </div>
+                    </article>
+
+                    <article class="product-item group" data-category="accesorios">
+                        <div class="relative overflow-hidden mb-6 border border-gray-800">
+                            <a href="#">
+                                <img src="img/CANGURERA.png" alt="Cangurera" class="w-full h-96 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                            </a>
+                            <div class="absolute top-2 left-2 bg-white text-black text-[10px] uppercase font-bold px-2 py-1">Nuevo</div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-bold text-white mb-1">CANGURERA URBAN</h3>
+                            <p class="text-gray-500 text-xs mb-3">Accesorios</p>
+                            <span class="block text-gray-300 font-bold mb-4">$75.000 COP</span>
+                            <a href="#" class="inline-block border-b border-gray-600 text-white text-xs font-bold uppercase tracking-widest pb-1 hover:border-white hover:text-denimLight transition-all">Ver Detalles</a>
+                        </div>
+                    </article>
+
+                    <article class="product-item group" data-category="accesorios">
+                        <div class="relative overflow-hidden mb-6 border border-gray-800">
+                            <a href="#">
+                                <img src="img/BILLETERA.png" alt="Billetera" class="w-full h-96 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                            </a>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-bold text-white mb-1">BILLETERA SLIM</h3>
+                            <p class="text-gray-500 text-xs mb-3">Accesorios</p>
+                            <span class="block text-gray-300 font-bold mb-4">$35.000 COP</span>
+                            <a href="#" class="inline-block border-b border-gray-600 text-white text-xs font-bold uppercase tracking-widest pb-1 hover:border-white hover:text-denimLight transition-all">Ver Detalles</a>
+                        </div>
+                    </article>
+
+                    <article class="product-item group opacity-50 hover:opacity-100 transition-opacity" data-category="lab">
+                        <div class="relative overflow-hidden mb-6 border-2 border-dashed border-gray-800 h-96 flex items-center justify-center bg-[#111]">
+                            <span class="text-gray-600 text-xs uppercase tracking-widest font-lab text-2xl">Lab* Coming Soon</span>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-bold text-gray-500 mb-1">NUEVO DISEÑO</h3>
+                            <p class="text-gray-600 text-xs mb-3">Experimental</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <footer class="bg-noir border-t border-gray-800 flex flex-col md:flex-row justify-between items-center py-8 px-4 text-xs text-gray-500">
+        <p>&copy; 2025 NOIRBLUE. Todos los derechos reservados.</p>
+        <p class="mt-2 md:mt-0">Diseñado con código artesanal.</p>
+    </footer>
+
+</body>
+</html>

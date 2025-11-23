@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetiquera | NOIRBLUE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-noir text-gray-200 font-main antialiased">
+
+   <nav class="p-6 border-b border-gray-800 flex justify-between items-center">
+        
+        <a href="index.html" class="text-2xl font-bold tracking-widest text-white hover:text-gray-300 transition-colors">
+            NOIRBLUE
+        </a>
+
+        <div class="flex items-center space-x-6">
+            
+            <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-gray-500 hover:text-white transition-colors flex items-center">
+                <svg class="w-3 h-3 mr-1 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                Inicio
+            </a>
+
+            <span class="text-gray-700">|</span>
+
+            <a href="catalogo.html" class="text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-white transition-colors">
+                Volver al Catálogo
+            </a>
+            
+        </div>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-4 py-12 md:py-20">
+        <div class="flex flex-col md:flex-row gap-12">
+            
+            <div class="md:w-3/5">
+                <div class="aspect-[4/5] w-full relative bg-[#111] overflow-hidden border-2 border-dashed border-gray-700">
+                    <img src="img/COSMETIQUERA.jpg" alt="Cosmetiquera Noirblue" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+
+            <div class="md:w-2/5 flex flex-col justify-center">
+                <span class="text-denimLight font-bold uppercase tracking-widest text-xs mb-2">Accesorios</span>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">COSMETIQUERA DENIM</h1>
+                <p class="text-2xl text-gray-300 mb-8">$45.000 COP</p>
+
+                <div class="space-y-6 mb-10 text-gray-400 text-sm leading-relaxed border-t border-b border-gray-800 py-6">
+                    <p>Accesorio secundario elaborado con retazos recuperados de la producción principal. Una pieza clave para minimizar la contaminación textil.</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Material: Retazos de Denim reciclado.</li>
+                        <li>Uso: Ideal para lápices, maquillaje o cables.</li>
+                        <li>Impacto: Producto de Economía Circular.</li>
+                    </ul>
+                </div>
+
+                <button class="w-full py-4 bg-white text-noir font-bold uppercase tracking-[0.2em] hover:bg-gray-200 transition-colors mb-4">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-noir border-t border-gray-800 text-center py-8 text-xs text-gray-500">
+        <p>&copy; 2025 NOIRBLUE. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
